@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR ARITMATIKA</title>
+</head>
+
+<body>
+    <script>
+        //Circle
+        let r = 21
+        let areaCircle = Math.PI * r**2 
+        let circumferenceCircle = 22/7 * 2 * r
+        console.log(`1. Has been known radius of circle 12 cm. \n\tWhat is the area and circumference of a circle?`)
+        console.log(`\tAnswer \n\thas been known Radius = ${r}`)
+        console.log(`\tQuestion : What is the area and circumference ?`)
+        console.log(`\tArea \n\trumus = 22/7 (3.14) x R X R\n\t\t  = ${areaCircle} cm`)
+        console.log(`\tCircumference \n\trumus = 22/7 (3.14) x 2 X R\n\t\t  = ${circumferenceCircle} cm\n\n`)
+
+        //Triangle
+        var baseTriangle = 10
+        var pitagoras = Math.sqrt(baseTriangle**2 + baseTriangle**2)
+        var areaTriangle = 1/2 * baseTriangle * baseTriangle
+        var circumferenceTriangle = baseTriangle + baseTriangle + pitagoras
+
+        console.log(`2. There is a floating isosceles triangel have base 10cm. What is the area and circumference of a triangel?`)
+        console.log(`Answer \nhas been known base and height = ${baseTriangle}`)
+        console.log(`Question : What is the area and circumference ?`)
+        console.log(`Area \nrumus = 1/2 x Base x Height\n\t  = ${areaTriangle} cm`)
+        console.log(`Circumference \nHypotenuse of a triangle \nrumus = Math.sqrt(Base**2 + Base**2)\n\t  = ${pitagoras} cm \nrumus = Base + Height + Hypotenuse of a triangle\n\t  = ${circumferenceTriangle} cm\n\n`)
+
+        //Cuboids
+        var baseCuboids = 10
+        var heightCuboids = 11
+        var widthCuboids = 12
+        var volumeCuboids = baseCuboids * heightCuboids * widthCuboids
+        var surfaceAreaCuboids = 2*(baseCuboids + heightCuboids) + 2*(baseCuboids + widthCuboids) + 2*(heightCuboids + widthCuboids)
+        console.log(`3. There is a Cuboids have base 10cm, height 10cm, width 10cm. What is the Volume and Surface Area of a cuboids?`)
+        console.log(`Answer \nhas been known base ${baseCuboids}, height = ${heightCuboids} and witdh = ${widthCuboids}`)
+        console.log(`Question : What is the Volume and Surface Area ?`)
+        console.log(`Volume \nrumus = Base x Height x Width \n\t  = ${volumeCuboids} cm`)
+        console.log(`Surface Area \nrumus = 2 x (Base + Height) + 2 x (Base + Width) + 2 X (Height + Width) \n\t  = ${surfaceAreaCuboids} cm`)
+        
+    </script>
+</body>
+
+</html>
