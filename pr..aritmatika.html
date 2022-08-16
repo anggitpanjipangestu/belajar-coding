@@ -10,6 +10,7 @@
 
 <body>
     <script>
+        document.writeln(`Klik kanan, Inspect, Pilih Console`)
         //Circle
         let r = 21
         let areaCircle = Math.PI * r**2 
@@ -22,7 +23,7 @@
 
         //Triangle
         var baseTriangle = 10
-        var pitagoras = Math.sqrt(baseTriangle**2 + baseTriangle**2)
+        var pitagoras = Math.sqrt(baseTriangle**2 + baseTriangle**2)//.toFixed(3)
         var areaTriangle = 1/2 * baseTriangle * baseTriangle
         var circumferenceTriangle = baseTriangle + baseTriangle + pitagoras
 
@@ -37,12 +38,12 @@
         var heightCuboids = 11
         var widthCuboids = 12
         var volumeCuboids = baseCuboids * heightCuboids * widthCuboids
-        var surfaceAreaCuboids = 2*(baseCuboids + heightCuboids) + 2*(baseCuboids + widthCuboids) + 2*(heightCuboids + widthCuboids)
+        var surfaceAreaCuboids = 2*(baseCuboids * heightCuboids) + 2*(baseCuboids * widthCuboids) + 2*(heightCuboids * widthCuboids)
         console.log(`3. There is a Cuboids have base 10cm, height 10cm, width 10cm. What is the Volume and Surface Area of a cuboids?`)
         console.log(`Answer \nhas been known base ${baseCuboids}, height = ${heightCuboids} and witdh = ${widthCuboids}`)
         console.log(`Question : What is the Volume and Surface Area ?`)
         console.log(`Volume \nrumus = Base x Height x Width \n\t  = ${volumeCuboids} cm`)
-        console.log(`Surface Area \nrumus = 2 x (Base + Height) + 2 x (Base + Width) + 2 X (Height + Width) \n\t  = ${surfaceAreaCuboids} cm`)
+        console.log(`Surface Area \nrumus = 2 x (Base x Height) + 2 x (Base x Width) + 2 X (Height x Width) \n\t  = ${surfaceAreaCuboids} cm`)
         
     </script>
 </body>

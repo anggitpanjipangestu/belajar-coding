@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Branching </title>
+</head>
+<body>
+    <script>
+        document.writeln(`PR BRANCHING \n klik kanan, pilih inspect, lalu pilih console`)
+        //CASE1
+        console.log(`CASE 1 \nanggaplah kalian pnya warung \nmau check harga produk \nnama produk + harga \nANSWER`)
+        let produk = "mi ayam"
+        let harga = 15000
+        let toping = "ceker"
+        let hargaToping = 5000
+        let komplit = harga + hargaToping
+        console.log(`saya pengen jual warung ${produk} ${toping}, \ncuman rata-rata orang jual ${komplit}\njadi saya jual ${produk} aja dengan harga standar ${harga}`)
+        //Operator Logika
+        if (komplit < harga && harga > komplit){
+            console.log(`Gassss jual mi ayam`)
+        } else if (harga < komplit && produk == "Mi ayam"){
+            console.log(`jual mi ayam biasa`)
+        } 
+        else {
+        alert(`BUKA WARUNG YANG JUJUR`)
+        }
+        //Tenary Operator
+        let miAyamMurah = komplit < harga && toping ? `gas jual mi ayam` : `jual mi ayam biasa`
+        console.log(miAyamMurah)
+        console.log(`\n`)
+     
+
+    //CASE 2 
+    console.log(`CASE 2 \nanggap kalian pemilik bar \nmau check gender sama check umur \nharus cowok & umur 18+ => boleh masuk / gak boleh \nANSWER`)
+    
+
+    //CASE 3 = kalian pula planning pergi
+    //misalkan hujan, tidak jadi
+    //misalkan mendung, bawa jas hujan
+    //misal cerah, aku datang dengan berani`
+    </script>
+</body>
+</html>
