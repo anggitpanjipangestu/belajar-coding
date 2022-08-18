@@ -8,7 +8,8 @@
 </head>
 <body>
     <script>
-        document.writeln(`PR BRANCHING \n klik kanan, pilih inspect, lalu pilih console`)
+        document.writeln(`PR BRANCHING`);
+        document.writeln(`klik kanan, pilih inspect, lalu pilih console`);
         //CASE1
         console.log(`CASE 1 \nanggaplah kalian pnya warung \nmau check harga produk \nnama produk + harga \nANSWER`)
         let produk = "mi ayam"
@@ -27,19 +28,56 @@
         alert(`BUKA WARUNG YANG JUJUR`)
         }
         //Tenary Operator
-        let miAyamMurah = komplit < harga && toping ? `gas jual mi ayam` : `jual mi ayam biasa`
+        let miAyamMurah = komplit < harga && toping == `ceker`? `gas jual mi ayam` : `jual mi ayam biasa`
         console.log(miAyamMurah)
         console.log(`\n`)
      
 
     //CASE 2 
     console.log(`CASE 2 \nanggap kalian pemilik bar \nmau check gender sama check umur \nharus cowok & umur 18+ => boleh masuk / gak boleh \nANSWER`)
+    let namaBar = `barber shop`
+    let umur = 18
+    let kelamin = `laki-laki`
+    let aku = `Anggit ganteng`
+    let umurAku = 19
+    console.log(`saya ${aku} umurku ${umurAku}, \naku pengen lebih ganteng dengan masuk ke ${namaBar}yang isinya orang berumur ${umur}++`)
+    //Operator Logika
+    if (umurAku <= umur && kelamin == `laki-laki`){
+        console.log(`boleh masuk barber shop`)
+    } else if (umurAku < umur || kelamin == `perempuan`){
+        console.log(`kamu banci`)
+    } else {
+        alert(`PULANG AJA (STAY HALAL. JADI BABERSHOP AJA)`)
+    }
+    //Tenary Operator
+    let otwGanteng = umurAku > umur && namaBar == `barber shop`? `BOLEH MASUK` : `PULANG AJA`
+    console.log(`${otwGanteng}`)
+    console.log(`\n`)
     
+    //CASE 3 
+    console.log(`CASE 3 \nmisalkan hujan, tidak jadi \nmisalkan mendung, bawa jas hujan \nmisal cerah, aku datang dengan berani \nANSWER`)
+    let cuaca1 = `hujan`
+    let rencana1 = `males`
+    let cuaca2 = `mendung`
+    let rencana2 = `bawa jas hujan`
+    let cuaca3 = `cerah`
+    let rencana3 = `aku datang dengan berani`
+    let gerimis = rencana3 + rencana2
+    console.log(`CASE 3 \nmisalkan hujan, tidak jadi \nmisalkan mendung, bawa jas hujan \nmisal cerah, aku datang dengan berani \nANSWER`)
+    //Operator Logika
+    if (cuaca1 === `hujan` && cuaca3.length > 4){
+        console.log(`${rencana1} tapi klo sudah ${gerimis}`)
+    } else if (cuaca2 == `mendung` && cuaca2.length >= 4){
+        console.log(`${rencana2} tapi jiwa ini sesungguhnya ${rencana1}`)
+    } else if(cuaca3 == `cerah` && cuaca3.length <= 5){
+        console.log(`${rencana3} tapi jaga-jaga ${rencana2}`)
+    } else {
+        alert (`BACA BISMILLAH SEBELUM OTW`)
+    }
+    //Tenary Operator
+        let otwKeDoi = cuaca1 == `hujan` && cuaca2 == `mendung`? `${rencana3}` + ' ' + `${rencana2}` : `${rencanca1}`
+        console.log(`${otwKeDoi}`)
 
-    //CASE 3 = kalian pula planning pergi
-    //misalkan hujan, tidak jadi
-    //misalkan mendung, bawa jas hujan
-    //misal cerah, aku datang dengan berani`
     </script>
 </body>
 </html>
